@@ -54,7 +54,7 @@ nav > a:hover {
   border-bottom: 1px solid #000;
 }
 
-section {
+.intro {
   display: flex;
   flex-direction: column;
   height: 100vh;

@@ -1,8 +1,7 @@
 {
-  "name": "nwilcox.com",
+  "name": "nickwilcox.me",
   "version": "1.0.0",
-  "description": "Personal Site",
-  "main": "index.js",
+  "description": "My Portfolio",
   "scripts": {
 		"watch": "rollup -c -w",
 		"dev": "rollup -c",
