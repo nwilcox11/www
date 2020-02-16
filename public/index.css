@@ -1,5 +1,7 @@
 :root {
   --maxWidth: 980px;
+  --bold: 500;
+  --light: 300;
 }
 
 main {
@@ -72,14 +74,19 @@ nav > a:hover {
   font-size: 6em;
   margin: 0;
   line-height: 1.125;
+  font-weight: var(--light);
+}
+
+.intro > h1 > b {
+  font-weight: var(--bold);
 }
 
 .intro > h3 {
   font-size: 1.625em;
-  font-weight: 400;
+  font-weight: var(--light);
   margin: 0;
 }
 
 .intro > h3 > b {
-  font-weight: 700;
+  font-weight: var(--bold);
 }
