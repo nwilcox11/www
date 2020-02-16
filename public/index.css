@@ -3,8 +3,9 @@
 }
 
 main {
-  font-family: 'Avenir';
   animation: fadein 2s;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 @keyframes fadein {
@@ -38,6 +39,12 @@ main {
   font-size: 0.75em;
 }
 
+section {
+  margin: auto;
+  max-width: var(--maxWidth);
+  padding: 0 30px;
+}
+
 nav > a {
   color: #000;
   margin-right: 20px;
@@ -59,14 +66,12 @@ nav > a:hover {
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  margin: auto;
-  max-width: var(--maxWidth);
-  padding: 0 30px;
 }
 
 .intro > h1 {
   font-size: 6em;
   margin: 0;
+  line-height: 1.125;
 }
 
 .intro > h3 {
