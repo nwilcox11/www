@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "My Portfolio",
   "scripts": {
-		"watch": "rollup -c -w",
-		"dev": "rollup -c",
+    "watch": "rollup -c -w",
+    "dev": "rollup -c",
     "build": "rollup -c --environment BUILD:production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
