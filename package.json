@@ -8,10 +8,6 @@
     "build": "rollup -c --environment BUILD:production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "Nick",
-    "Wilcox"
-  ],
   "author": "Nick Wilcox",
   "license": "ISC",
   "devDependencies": {
