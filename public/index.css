@@ -1,38 +1,3 @@
-:root {
-  --maxWidth: 980px;
-  --bold: 500;
-  --light: 300;
-  --primary-foreground: #000;
-  --primary-background: #fff;
-  --highlight-alert: #ff0080;
-  --highlight-violet: #7928ca;
-  --highlight-cyan: #79ffe1;
-  --break-sm: 375px;
-}
-/*
- * Break points:
- * sm: 375px
- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  color: var(--primary-foreground);
-}
-
-main {
-  animation: fadein 2s;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -41,99 +6,9 @@ main {
     opacity: 1;
   }
 }
-
-.header {
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.header__wrapper {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  max-width: var(--maxWidth);
-  padding: 20px;
-}
-
-.header__theme {
-  font-size: 0.75em;
-}
-
-section {
-  margin: auto;
-  max-width: var(--maxWidth);
-  padding: 0 30px;
-}
-
-section > h3 > b {
-  color: var(--highlight-alert);
-}
-
-nav > a {
-  color: var(--primary-foreground);
-  margin-right: 20px;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border 0.3s ease;
-}
-
-nav > a:last-child {
-  margin-right: 0px;
-}
-
 nav > a:hover {
   border-bottom: 1px solid var(--primary-foreground);
 }
-
-.svg {
-  width: 40px;
-  height: 40px;
-}
-
-.svg__circle {
-  fill: var(--highlight-alert);
-}
-
-.svg__text {
-  font-size: 1em;
-  text-anchor: middle;
-  text-transform: uppercase;
-  fill: var(--primary-background);
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 82px);
-  justify-content: center;
-}
-
-.intro > h1 {
-  font-size: 6em;
-  margin: 0;
-  line-height: 1.125;
-  font-weight: var(--light);
-}
-
-.intro > h1 > b {
-  font-weight: var(--bold);
-}
-
-.intro > h3 {
-  font-size: 1.625em;
-  font-weight: var(--light);
-  margin: 0;
-}
-
-.intro > h3 > b {
-  font-weight: var(--bold);
-}
-
 @media (max-width: 375px) {
   .header__wrapper {
     align-items: flex-start;

@@ -4,7 +4,104 @@
     <meta charset="utf-8" />
     <meta name="Description" content="Nick Wilcox's corner of the web." />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="index.css" />
+		<link rel="preload" href="index.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+		<noscript><link rel="stylesheet" href="index.css"/></noscript>
+		<style>
+			:root {
+				--maxWidth: 980px;
+				--bold: 500;
+				--light: 300;
+				--primary-foreground: #000;
+				--primary-background: #fff;
+				--highlight-alert: #ff0080;
+				--highlight-violet: #7928ca;
+				--highlight-cyan: #79ffe1;
+			}
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				scroll-behavior: smooth;
+				text-rendering: optimizeSpeed;
+				color: var(--primary-foreground);
+			}
+			main {
+				animation: fadein 2s;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+					Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+			}
+			.header {
+				background-color: rgba(255, 255, 255, 0.5);
+				backdrop-filter: blur(8px);
+				width: 100%;
+				position: sticky;
+				top: 0;
+				z-index: 1;
+			}
+			.header__wrapper {
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+				margin: auto;
+				max-width: var(--maxWidth);
+				padding: 20px;
+			}
+			.header__theme {
+				font-size: 0.75em;
+			}
+			section {
+				margin: auto;
+				max-width: var(--maxWidth);
+				padding: 0 30px;
+			}
+			section > h3 > b {
+				color: var(--highlight-alert);
+			}
+			nav > a {
+				color: var(--primary-foreground);
+				margin-right: 20px;
+				text-decoration: none;
+				border-bottom: 1px solid transparent;
+				transition: border 0.3s ease;
+			}
+			nav > a:last-child {
+				margin-right: 0px;
+			}
+			.svg {
+				width: 40px;
+				height: 40px;
+			}
+			.svg__circle {
+				fill: var(--highlight-alert);
+			}
+			.intro {
+				display: flex;
+				flex-direction: column;
+				height: calc(100vh - 82px);
+				justify-content: center;
+			}
+			.intro > h1 {
+				font-size: 6em;
+				margin: 0;
+				line-height: 1.125;
+				font-weight: var(--light);
+			}
+			.intro > h1 > b {
+				font-weight: var(--bold);
+			}
+			.intro > h3 {
+				font-size: 1.625em;
+				font-weight: var(--light);
+				margin: 0;
+			}
+			.intro > h3 > b {
+				font-weight: var(--bold);
+			}
+		</style>
     <title>Nick Wilcox</title>
   </head>
 
