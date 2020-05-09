@@ -9,13 +9,3 @@
 nav > a:hover {
   border-bottom: 1px solid var(--primary-foreground);
 }
-@media (max-width: 375px) {
-  .header__wrapper {
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  nav {
-    margin-top: 20px;
-  }
-}
