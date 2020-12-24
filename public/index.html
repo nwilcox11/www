@@ -4,12 +4,6 @@
     <meta charset="utf-8" />
     <meta name="Description" content="Nick Wilcox's corner of the web." />
     <meta name="viewport" content="width=device-width" />
-    <link
-      rel="preload"
-      href="index.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
     <link rel="icon" href="apple-touch-icon.png" />
     <noscript><link rel="stylesheet" href="index.css"/></noscript>
     <style>
@@ -100,12 +94,12 @@
       .intro > h1 > b {
         font-weight: var(--bold);
       }
-      .intro > h2 {
+      .intro > h3 {
         font-size: 1.625em;
         font-weight: var(--light);
         margin: 0;
       }
-      .intro > h2 > b {
+      .intro > h3 > b {
         font-weight: var(--bold);
       }
       @media (max-width: 375px) {
@@ -118,6 +112,17 @@
         nav {
           margin-top: 20px;
         }
+      }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      nav > a:hover {
+        border-bottom: 1px solid var(--primary-foreground);
       }
     </style>
     <title>Nick Wilcox</title>
