@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "^1.19.1",
-    "rollup": "^1.32.1",
+    "rollup": "^2.79.2",
     "rollup-plugin-terser": "^5.3.1"
   }
 }
